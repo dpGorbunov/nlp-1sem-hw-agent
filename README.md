@@ -42,7 +42,11 @@ cp .env.example .env
 jupyter notebook hw_agent_nutrition.ipynb
 ```
 
-Выполнить ячейки последовательно. Результат: `submission.csv`
+Выполнить ячейки последовательно. Результат: `submission_grbn.csv`
+
+## Результат
+
+**Accuracy: 0.74**
 
 ## Инструменты
 
@@ -61,11 +65,12 @@ jupyter notebook hw_agent_nutrition.ipynb
 
 ```
 .
-├── hw_agent_nutrition.ipynb  # Основной ноутбук
+├── hw_agent_nutrition.ipynb  # Основной ноутбук (LangChain + Qwen2.5:3b)
+├── baseline.ipynb            # Baseline решение (Qwen3-4B + transformers)
 ├── requirements.txt
 ├── .env.example
 ├── .env                      # API ключи (gitignored)
 ├── test.csv                  # Входные вопросы
 ├── sample.csv                # Формат ответа
-└── submission.csv            # Результат (gitignored)
+└── submission_grbn.csv       # Результат
 ```
